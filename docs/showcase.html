@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive UI Elements • Showcase</title>
+  <style>
+    :root { --bg:#0b0f14; --card:#121826; --ink:#e6f3ff; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b0f14,#0b0f14 60%,#0c1018);
+         color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Roboto,Inter,sans-serif}
+    header{padding:32px 24px;text-align:center}
+    h1{margin:0 0 8px;font-weight:800;letter-spacing:.3px}
+    p.lead{margin:0;color:#a9c3da}
+    main{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));padding:24px;max-width:1100px;margin:0 auto}
+    a.card{display:block;background:var(--card);border-radius:16px;padding:16px;text-decoration:none;color:inherit;border:1px solid #1b2436;transition:transform .2s ease, border .2s ease}
+    a.card:hover{transform:translateY(-2px);border-color:#2a3a58}
+    .thumb{aspect-ratio:16/9;border-radius:12px;background:#0b0f14 url('../assets/preview-gifs/comet-orb.png') center/cover no-repeat;border:1px solid #1b2436;margin-bottom:12px}
+    .title{font-weight:700;margin-bottom:6px}
+    .desc{color:#a9c3da;font-size:14px}
+    footer{padding:24px;color:#7fa2bf;text-align:center}
+    code{background:#121826;border:1px solid #1b2436;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interactive UI Elements</h1>
+    <p class="lead">A growing gallery of creative motion UI experiments</p>
+  </header>
+  <main>
+    <a class="card" href="../elements/comet-orb/index.html">
+      <div class="thumb" title="Comet Orb Cursor"></div>
+      <div class="title">☄️ Comet Orb Cursor</div>
+      <div class="desc">Glowing comet-like cursor with ribbon trail and particle sparks.</div>
+    </a>
+  </main>
+  <footer>
+    Deploy via <code>Settings → Pages</code>. Add more elements under <code>/elements/</code> and link them here.
+  </footer>
+</body>
+</html>
